@@ -15,6 +15,29 @@ This project analyzes customer behavior to identify key differences between **Re
 
 ## Tools
 - Python: `pandas`, `seaborn`, `scipy`, `matplotlib`
+- PowerBI
+
+## Process:
+1. **Data Preparation and EDA**  
+   - Import dataset, handle missing values, encode categorical variables
+   - Perform basic EDA (describe infomation, check unique values, spot data issues)
+   - Standardize time columns (convert all dates to the same format and divide into groups)
+
+2. **Statistical Testing**  
+   - **T-test**: Validate numerical differences (Age, Total_Amount)  
+   - **Chi-square**: Test categorical variables (Gender, Income, Country, Product_Category, Shipping_Method, Ratings, Month_Year, Payment Method, Order Status) 
+
+4. **Segment Significant Difference**  
+   - Highlight key features where Premium significantly differs from Regular  
+   - Visualize the differs using barplot
+
+5. **Dashboard Visualization**  
+   - Visualize customer demographics and behaviors in Power BI dashboard
+   - Highlight patterns in age, gender, income, product categories, ratings, and monthly transactions
+
+6. **Campaign Design**  
+   - Define customer personas for targeted promotions  
+   - Build a data-driven campaign plan aiming at 10% conversion growth  
 
 ## Key Insights
 - Variables like **Income**, **Order Status**, and **Product Category** show significant differences between segments.
